@@ -29,12 +29,12 @@
 
    `java -cp "jna.jar;jna-platform.jar" com.sun.jna.platform.win32.COM.tlb.TlbImp -tlb.id {66b9c175-82f2-45e9-af86-58ad5ded5adc} -tlb.major.version 1 -tlb.minor.version 0 -bind.mode dispId -output.dir outputdir`
 
-调用方法：
-```java
+    调用方法：
+    ```java
 		Ole32.INSTANCE.CoInitializeEx(Pointer.NULL, Ole32.COINIT_MULTITHREADED);
 		OpInterface2 op2 = new OpInterface2();
 		System.out.println("demo2: " + op2.Ver());
-```
+    ```
 
 
 
