@@ -24,3 +24,10 @@
 
    `java -cp "jna.jar;jna-platform.jar" com.sun.jna.platform.win32.COM.tlb.TlbImp -tlb.id {66b9c175-82f2-45e9-af86-58ad5ded5adc} -tlb.major.version 1 -tlb.minor.version 0 -bind.mode dispId -output.dir outputdir`
 
+
+
+
+
+demo是针对OP做的
+
+https://github.com/WallBreaker2/op
