@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>op</groupId>
+	<artifactId>java.example</artifactId>
+	<version>0.4.0</version>
+	<dependencies>
+		<!-- jna连接dll -->
+		<dependency>
+			<groupId>net.java.dev.jna</groupId>
+			<artifactId>jna</artifactId>
+			<version>5.9.0</version>
+		</dependency>
+		<dependency>
+			<groupId>net.java.dev.jna</groupId>
+			<artifactId>jna-platform</artifactId>
+			<version>5.9.0</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>eu.doppel-helix.jna.tlbcodegenerator</groupId>
+				<artifactId>TlbCodeGenerator</artifactId>
+				<version>1.0.2</version>
+				<configuration>
+					<file>D:/BackUp/芯片开发/op-0.4.0/op_x86.dll</file>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
